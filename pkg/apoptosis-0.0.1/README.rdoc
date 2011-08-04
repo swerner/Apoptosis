@@ -1,26 +1,20 @@
 = apoptosis
 
-* http://github.com/#{github_username}/#{project_name}
+gem install apoptosis
+
+Navigate to a project directory which is also a git repository and run
+the command:
+
+apoptosis
+
+This command will create a DeathRow.md file in the directory with a list
+of files and lines in your project which have not been touched in a
+year.  The idea is that you should re-evaluate and/or refactor them.
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
-
-== REQUIREMENTS:
-
-* FIX (list of requirements)
-
-== INSTALL:
-
-* FIX (sudo gem install, anything else)
+A little gem for helping you figure out which lines of code may need
+killed off and replaced with newer ones.
 
 == LICENSE:
 
