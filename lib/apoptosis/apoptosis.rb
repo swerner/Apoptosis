@@ -27,7 +27,7 @@ module Apoptosis
     #Should probably make it command line configurable
     def old?(line)
       today = Date.today()
-      return (today.year > line.year) && (today.month >= line.month)
+      return (today.year > line.year) && (today.month >= line.month) || (today.year > (line.year-1))
     end
 
     def process_contents
