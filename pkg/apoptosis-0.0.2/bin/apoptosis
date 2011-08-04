@@ -1,0 +1,6 @@
+#! /usr/bin/env ruby
+
+require 'apoptosis'
+
+a = Apoptosis::Apoptosis.new
+a.process_contents
