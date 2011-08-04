@@ -1,11 +1,11 @@
 = apoptosis
 
-gem install apoptosis
+  gem install apoptosis
 
 Navigate to a project directory which is also a git repository and run
 the command:
 
-apoptosis
+  apoptosis
 
 This command will create a DeathRow.md file in the directory with a list
 of files and lines in your project which have not been touched in a
