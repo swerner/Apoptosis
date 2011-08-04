@@ -1,6 +1,8 @@
 = apoptosis
 
 http://github.com/swerner/apoptosis
+  
+  gem install apoptosis
 
 Navigate to a project directory which is also a git repository and run
 the command:
