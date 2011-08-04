@@ -33,12 +33,16 @@ module Apoptosis
     def process_contents
       outfile = File.open("DeathRow.md", "w+")
       @contents.each do |f|
-        unless is_binary?(f) 
-          outfile.puts(@basedir+'/'+f)
-          outfile.puts("=====")
-          process_blame(get_blame(f)).each do |l|
-            outfile.puts(l)
+        begin
+          lines = process_blame(get_blame(f))
+          if lines.length > 0
+            outfile.puts(@basedir+'/'+f)
+            outfile.puts("=====")
+            lines.each do |l|
+              outfile.puts(l)
+            end
           end
+        rescue
         end
       end
       outfile.close
@@ -46,11 +50,6 @@ module Apoptosis
 
     def extract_date(line)
       line.scan(/[0-9]{4}-[0-9]{2}-[0-9]{2}/)[0]
-    end
-
-    def is_binary?(f)
-      badfiles = ['exe','png','jpg','jpeg','gif', 'jar']
-      badfiles.include?(f.split('.')[1])
     end
 
   end
