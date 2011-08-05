@@ -5,5 +5,5 @@ require 'date'
 require 'apoptosis/apoptosis.rb'
 
 module Apoptosis
-  VERSION = '0.0.4'
+  VERSION = '0.0.5'
 end
