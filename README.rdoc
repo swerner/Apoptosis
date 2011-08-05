@@ -1,6 +1,7 @@
 = apoptosis
+I got the idea for this gem during JRubyConf during Michael Feathers' talk. He made a point that software is alive and unlike biological systems, doesn't have an automatic way to kill off old 'cells'. This gem is to aid in finding old, potentially crufty areas of your project that may need to be killed off and remade, or at least looked at.
 
-http://github.com/swerner/apoptosis
+Currently the gem alerts you to any lines that haven't been touched in at least a year. 
   
   gem install apoptosis
 
