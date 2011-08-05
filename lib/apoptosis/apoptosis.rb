@@ -4,7 +4,7 @@ module Apoptosis
 
     def initialize
       @basedir = Dir.pwd
-      @contents = Dir['**/*.*']
+      @contents = (`git ls-files`).split("\n")
     end
 
     def get_blame(file)
