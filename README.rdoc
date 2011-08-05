@@ -1,4 +1,6 @@
-= apoptosis
+= DESCRIPTION:
+https://rubygems.org/gems/apoptosis
+
 I got the idea for this gem during JRubyConf during Michael Feathers' talk. He made a point that software is alive and unlike biological systems, doesn't have an automatic way to kill off old 'cells'. This gem is to aid in finding old, potentially crufty areas of your project that may need to be killed off and remade, or at least looked at.
 
 Currently the gem alerts you to any lines that haven't been touched in at least a year. 
@@ -14,10 +16,6 @@ This command will create a DeathRow.md file in the directory with a list
 of files and lines in your project which have not been touched in a
 year.  The idea is that you should re-evaluate and/or refactor them.
 
-== DESCRIPTION:
-
-A little gem for helping you figure out which lines of code may need
-killed off and replaced with newer ones.
 
 == LICENSE:
 
